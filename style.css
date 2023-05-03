@@ -32,5 +32,15 @@ li {
 a {
     text-decoration: none;
     color: #3A3A3A;
-    font-weight: 700px;
+
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+
+}
+
+i {
+    margin: 10px;
 }
