@@ -1,0 +1,36 @@
+body {
+    font-family: 'Golos Text', sans-serif;
+    font-family: 'Lora', serif;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Schibsted Grotesk', sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3%;
+
+}
+
+div {
+    display: flex;
+}
+
+li {
+    list-style: none;
+    align-items: center;
+    display: flex;
+    margin: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #3A3A3A;
+    font-weight: 700px;
+}
