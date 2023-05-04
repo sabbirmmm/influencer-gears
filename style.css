@@ -6,9 +6,21 @@ body {
     font-family: 'Poppins', sans-serif;
     font-family: 'Roboto', sans-serif;
     font-family: 'Schibsted Grotesk', sans-serif;
+    background-color: rgb(241, 237, 237);
+    margin: 0;
+
+
+
+}
+
+header {
     max-width: 1200px;
     margin: 0 auto;
+}
 
+main {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 nav {
@@ -18,7 +30,8 @@ nav {
 
 }
 
-div {
+.nav-title,
+.nav-list {
     display: flex;
 }
 
@@ -41,6 +54,171 @@ a {
 
 }
 
-i {
+.icon i {
     margin: 10px;
+}
+
+/* start section */
+.intro {
+    display: flex;
+    padding-top: 50px;
+
+}
+
+h1 {
+    font-size: 45px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20x;
+    background-color: #E02C6D;
+    padding: 10px 24px;
+    border-radius: 41px;
+    color: white;
+
+
+}
+
+.start {
+    width: 50%;
+}
+
+.dslr {
+    width: 50%;
+    display: flex;
+    justify-content: right;
+    background: url(images/Circle\ design.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+
+}
+
+.dslr img {
+    max-width: 100%;
+}
+
+.shopping-stes {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.logos {
+    width: fit-content;
+    border-top: 2px solid lightslategray;
+    border-bottom: 2px solid lightslategray;
+
+
+
+}
+
+.logos img {
+    margin: 20px;
+}
+
+.product {
+    box-shadow: 1px 2px rgb(231, 226, 226);
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.popular-collection {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 100px;
+}
+
+.rating .fa-star {
+    color: gold;
+}
+
+.empty {
+    color: gray;
+}
+
+
+.see-more {
+    margin-top: 20px;
+    display: flex;
+    justify-content: right;
+}
+
+.see-more a {
+    color: #E02C6D;
+    font-weight: 700;
+
+}
+
+.featured-product {
+    display: flex;
+    margin-top: 20px;
+
+}
+
+.featured-product div {
+    width: 50%;
+}
+
+footer {
+    margin-top: 50px;
+    background-color: rgb(0, 0, 0);
+    padding: 20px;
+}
+
+footer h2,
+.copyright {
+    color: white;
+    text-align: center;
+}
+
+span {
+    display: flex;
+    justify-content: center;
+
+}
+
+span i {
+    color: white;
+    margin: 10px;
+}
+
+@media screen and (max-width: 668px) {
+    header {
+        width: 100%;
+        margin: 0;
+    }
+
+    nav a {
+        position: absolute;
+        display: none;
+    }
+
+    main {
+        width: 100%;
+
+
+    }
+
+    .intro {
+        flex-direction: column;
+    }
+
+    .popular-collection {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 50px;
+    }
+
+    .featured-product {
+
+        flex-direction: column;
+    }
+
+    .featured-img {
+        max-width: 100%;
+    }
+
 }
