@@ -153,10 +153,19 @@ main {
 
 .popular-collection {
     margin-top: 100px;
+}
+
+.popular-collection h2 {
+    text-align: center;
+}
+
+.collection {
+    margin-top: 50px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 100px;
 }
+
 
 .product {
     box-shadow: 1px 2px rgb(231, 226, 226);
@@ -277,6 +286,19 @@ span i {
         align-items: center;
     }
 
+    .bar ul {
+        padding-inline-start: 0;
+    }
+
+    .bar-list {
+        display: none;
+    }
+
+    .bar-icon:hover>.bar-list {
+        display: block;
+        position: absolute;
+    }
+
     .nav-list {
         display: none;
     }
@@ -316,11 +338,12 @@ span i {
 
     .logos {
         text-align: center;
+        border: none;
     }
 
     /* ----------------------------------popular-collection section------------------------- */
 
-    .popular-collection {
+    .collection {
         grid-template-columns: repeat(1, 1fr);
         gap: 50px;
     }
