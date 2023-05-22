@@ -105,18 +105,38 @@ main {
     color: white;
 }
 
+
 .dslr {
     width: 50%;
     display: flex;
-    justify-content: right;
+    justify-content: center;
     background: url(images/Circle\ design.svg);
     background-repeat: no-repeat;
     background-size: contain;
 }
 
-.dslr img {
-    max-width: 100%;
+
+/* ---------------Animation(keyframe)--------- */
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+
+
 }
+
+.dslr img {
+    max-width: 70%;
+}
+
+.dslr img:hover {
+    animation: rotate 5s linear infinite;
+}
+
 
 
 
@@ -271,6 +291,55 @@ span i {
 
 
 /* -----------------------------------------------mediaquery---------------------------------------------------- */
+
+
+/* --------------------------for tablet--------------------------- */
+
+@media screen and (min-width: 669px) and (max-width: 992px) {
+    header {
+        width: 100%;
+        padding: 10px 20px;
+    }
+
+    .icon {
+        display: none;
+    }
+
+    /* ------------------------------main------------------------ */
+
+    main {
+        width: 100%;
+        padding: 10px 20px;
+
+    }
+
+    /* ----------------------------------popular-collection section------------------------- */
+
+    .collection {
+
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+
+    }
+
+    /* ----------------------------------shopping-stes section-------------------------------- */
+
+    .logos {
+        text-align: center;
+
+    }
+
+
+    footer {
+        width: 100%;
+    }
+
+}
+
+
+
+/* ----------------------------for mobile device--------------------*/
+
 
 @media screen and (max-width: 668px) {
 
